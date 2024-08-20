@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Run Python Script</title>
+    <script>
+        function runPythonScript(message) {
+            var python = new XMLHttpRequest();
+            python.open('GET', 'index.py', true);
+            python.send();
+        }
+    </script>
+</head>
+<body>
+    <h1>XingJiSoft</h1>
+    <button onclick="runPythonScript">StartOJ</button>
+</body>
+</html>
